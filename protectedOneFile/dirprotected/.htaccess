@@ -1,0 +1,13 @@
+Options -Indexes
+
+<Files "./lien1.html">
+  AuthType Basic
+  AuthName "Protected by password"
+  AuthUserFile "/[YOURPUBLICHTML]/protectedOneFile/dirprotected/.htpasswd"
+  AuthGroupFile "/dev/null"
+  Require user admin
+</Files>
+
+<Files "./lien2.html">
+  Require all denied
+</Files>
